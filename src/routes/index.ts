@@ -11,7 +11,7 @@ const FirstEndpoint: RouteHandler = (req, res) => {
 
 router.get("/endpoint", FirstEndpoint)
 router.get("/*", (_: Request, res: Response) => {
-  res.sendFile(path.resolve(__dirname, "../../client/build/index.html"))
+  res.sendFile(path.resolve(__dirname, "../../../client/build/index.html"))
 })
 
 export default router
