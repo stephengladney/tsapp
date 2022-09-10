@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/build/app.js",
-    "postinstall": "cd server && tsc"
+    "postinstall": "cd server && tsc",
+    "tsc": "tsc"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.8.3"
+  }
 }
