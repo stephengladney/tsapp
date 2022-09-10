@@ -7,7 +7,7 @@ import routes from "./routes/"
 
 const app = express()
 
-app.use(express.static(resolve(__dirname, "../../client/build")))
+app.use(express.static(resolve(__dirname, "../client/build")))
 app.use(routes)
 
 app.listen(Number(process.env.PORT) || 5000, () => {
