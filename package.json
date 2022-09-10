@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "heroku-postbuild": "npm --prefix ./client run build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/app.js --trace-warnings",
+    "start": "npm --prefix ./client run build && tsc && node build/app.js --trace-warnings",
     "tsc": "tsc"
   },
   "author": "",
