@@ -1,3 +1,2 @@
 npm ci --prefix client 
-npm ci
-npm run build --prefix client 
+npm ci 
